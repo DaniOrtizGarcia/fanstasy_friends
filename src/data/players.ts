@@ -1,0 +1,138 @@
+export interface Player {
+  id: number;
+  name: string;
+  image: string;
+  wins: number;
+  losses: number;
+  goals: number;
+  points: number;
+}
+
+export const players: Player[] = [
+  {
+    id: 1,
+    name: 'Carlos Ruiz',
+    image: 'https://via.placeholder.com/150',
+    wins: 0,
+    losses: 0,
+    goals: 0,
+    points: 110,
+  },
+  {
+    id: 2,
+    name: 'Xavi Ribera',
+    image: 'https://via.placeholder.com/150',
+    wins: 0,
+    losses: 0,
+    goals: 0,
+    points: 5,
+  },
+  {
+    id: 3,
+    name: 'Ivan Micó',
+    image: 'https://via.placeholder.com/150',
+    wins: 0,
+    losses: 0,
+    goals: 0,
+    points: 3,
+  },
+  {
+    id: 4,
+    name: 'Jordi Mollà',
+    image: 'https://via.placeholder.com/150',
+    wins: 0,
+    losses: 0,
+    goals: 0,
+    points: 1,
+  },
+  {
+    id: 5,
+    name: 'Raül Cambra',
+    image: 'https://via.placeholder.com/150',
+    wins: 0,
+    losses: 0,
+    goals: 0,
+    points: 0,
+  },
+  {
+    id: 6,
+    name: 'Carlos Sola',
+    image: 'https://via.placeholder.com/150',
+    wins: 0,
+    losses: 0,
+    goals: 0,
+    points: 3,
+  },
+  {
+    id: 7,
+    name: 'Víctor Mollà',
+    image: 'https://via.placeholder.com/150',
+    wins: 0,
+    losses: 0,
+    goals: 0,
+    points: 0,
+  },
+  {
+    id: 8,
+    name: 'Dani Ortiz',
+    image: 'https://via.placeholder.com/150',
+    wins: 0,
+    losses: 0,
+    goals: 0,
+    points: 0,
+  },
+  {
+    id: 9,
+    name: 'Manolo Revert',
+    image: 'https://via.placeholder.com/150',
+    wins: 0,
+    losses: 0,
+    goals: 0,
+    points: 0,
+  },
+  {
+    id: 10,
+    name: 'Jordi Martí',
+    image: 'https://via.placeholder.com/150',
+    wins: 0,
+    losses: 0,
+    goals: 0,
+    points: 0,
+  },
+  {
+    id: 11,
+    name: 'Dani Cabezuelo',
+    image: 'https://via.placeholder.com/150',
+    wins: 0,
+    losses: 0,
+    goals: 0,
+    points: 0,
+  },
+  {
+    id: 12,
+    name: 'Josep Barbera',
+    image: 'https://via.placeholder.com/150',
+    wins: 0,
+    losses: 0,
+    goals: 0,
+    points: 0,
+  },
+  {
+    id: 13,
+    name: 'Jordi Fabian',
+    image: 'https://via.placeholder.com/150',
+    wins: 0,
+    losses: 0,
+    goals: 0,
+    points: 0,
+  },
+  {
+    id: 14,
+    name: 'Josep Soriano',
+    image: 'https://via.placeholder.com/150',
+    wins: 0,
+    losses: 0,
+    goals: 0,
+    points: 0,
+  },
+];

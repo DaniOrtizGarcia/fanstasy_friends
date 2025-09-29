@@ -1,0 +1,11 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "SUSE Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,14 +1,15 @@
-import { players } from "../../data/players"
-import { useViewport } from "../../hooks";
-import { getResponsiveTexts } from "../../utils/tableTexts";
+import { useViewport, usePlayers } from "../../hooks";
+import { getResponsiveTexts } from "../../utils/table-texts";
 import './players-list.scss';
 
 
 export const PlayerList = () => {
-
-  const sortedPlayers = players.sort((a, b) => b.points - a.points);
+  const { players, loading, error } = usePlayers();
   const { isMobile } = useViewport();
   const texts = getResponsiveTexts(isMobile);
+
+  if (loading) return <div>Cargando...</div>;
+  if (error) return <div>Error: {error}</div>;
 
   return (
       <div className="players-list">
@@ -20,7 +21,7 @@ export const PlayerList = () => {
           <li className="players-list__header-item points">{texts.points}</li>
         </ul>
 
-      {sortedPlayers.map((player) => (
+      {players.map((player) => (
         <ul key={player.id} className="players-list__player">
           <li className="players-list__player-item name">{player.name}</li>
           <li className="players-list__player-item wins">{player.wins}</li>
@@ -29,6 +30,10 @@ export const PlayerList = () => {
           <li className="players-list__player-item points">{player.points}</li>
         </ul>
       ))}
+
+      <div className="players-list__info">
+        * Las victorias cuentan 2 puntos, los goles 0,5 puntos.
+      </div>
     </div>
-  )
-}
+  );
+};

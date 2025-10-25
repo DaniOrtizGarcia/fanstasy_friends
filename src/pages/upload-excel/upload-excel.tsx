@@ -25,7 +25,7 @@ export const UploadExcelPage = () => {
 
   const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(event.target.value);
-    setIsPasswordCorrect(event.target.value === 'ContraseñaSubirExcel54');
+    setIsPasswordCorrect(event.target.value === 'SubirExcel54');
   }
 
   const handleUploadToFirebase = async () => {
@@ -67,7 +67,7 @@ export const UploadExcelPage = () => {
 
       <section className="upload-excel__content">
         <h1>Subir Excel</h1>
-        <input type="password" value={password} onChange={handlePasswordChange} />
+        <input className='upload-excel__content-password' type="text" value={password} onChange={handlePasswordChange} />
         <input 
           ref={fileInputRef}
           className='upload-excel__content-input' 

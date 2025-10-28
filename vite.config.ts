@@ -1,8 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// Nombre de tu repositorio:
+const repoName = 'fanstasy_friends'
+
 export default defineConfig({
+  // ¡CRUCIAL! Debe empezar y terminar con una barra diagonal (/)
+  base: `/${repoName}/`,
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? '/fanstasy_friends/' : '/',
 })
